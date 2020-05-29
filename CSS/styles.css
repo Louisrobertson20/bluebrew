@@ -1,0 +1,294 @@
+
+html {
+  text-align: center;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+h2, h3, p {
+  font-family: 'Exo', sans-serif;
+}
+
+.dashed {
+  width: 20%;
+  border-top: 3px dashed #bbb;
+}
+
+/* Navigation Bar */
+
+.navbar-brand {
+  width: 120px;
+}
+
+.nav-links {
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 300px;
+  text-align: right;
+}
+
+.nav-link {
+  margin: 0 10px;
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 2px;
+}
+
+.home-link {
+  text-decoration: underline;
+}
+
+/* Home Section */
+
+.covid-banner {
+  text-align: center;
+  background-color: #eee8aa;
+  padding-top: 100px;
+}
+
+.covid-banner-text {
+  margin-bottom: 0;
+}
+
+.home-section {
+  width: 100%;
+}
+
+.home-btn {
+  width: 100%;
+  position: absolute;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.home-img {
+  width: 100%;
+}
+
+/* Home About */
+
+.home-about-section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.home-about-content {
+  width: 459px;
+  height: 200px;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 200px;
+  position: relative;
+  float: left;
+  padding: 0 10px 0 0;
+}
+
+.home-about-text {
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Testimonials Section */
+
+#testimonials-section {
+  text-align: center;
+  padding: 1rem 0 0 0;
+  font-family: 'Exo', sans-serif;
+  background-color: #72A3B3;
+}
+
+.testimonials-head {
+  margin: 1rem 0 1rem 0;
+}
+
+.testimonials-line {
+  width: 100px;
+  border-color: #4d3e3e;
+}
+
+.quote {
+  font-style: italic;
+  width: 75%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.carousel-img {
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+
+.testimonial-label {
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+  line-height: 2rem;
+}
+
+.carousel.inner {
+  text-align: center;
+}
+
+/* Instagram Section */
+
+.insta-section {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.insta-icon {
+  padding: 1rem 0 0 0;
+}
+
+.insta-img {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+
+/* Footer */
+
+.footer {
+  background-color: #232B38;
+}
+
+.footer-display {
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+.newsletter-text {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.form-group {
+  width: 260px;
+  margin: auto;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.social-icons {
+  padding: 10px;
+}
+
+.footer-text {
+  color: grey;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+
+/* Pages */
+
+.page-body {
+  padding-top: 100px;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+.page-text {
+  padding: 5rem 0;
+}
+
+.page-breaks {
+  height: 500px;
+}
+
+/* Event Hire Page */
+
+.form-dates {
+  width: 150px;
+  border-width: thin;
+}
+
+/* Contact Page */
+
+.fab-icons {
+  color: #E91E63;
+}
+
+.fas {
+  padding-bottom: 1rem;
+}
+
+/* Orders Page */
+
+.order-img {
+  height: 250px;
+}
+
+/* Blog Page */
+
+.blog-posts {
+  text-align: left;
+}
+
+/* About Page */
+
+.about-break {
+  height: 1000px
+}
+
+/* Responsiveness */
+
+
+@media (max-width: 1350px) {
+  .nav-links {
+
+    padding-left: 250px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .nav-links {
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-links {
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-links {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .nav-links {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .nav-links {
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-btn {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-btn {
+    margin-top: 60px;
+  }
+}
