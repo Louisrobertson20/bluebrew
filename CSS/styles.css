@@ -5,6 +5,7 @@ html {
 
 body {
   font-family: 'Exo', sans-serif;
+  line-height: 1.5;
 }
 
 h2, h3, p {
@@ -16,6 +17,10 @@ h2, h3, p {
   border-top: 3px dashed #bbb;
 }
 
+.btn {
+  font-family: 'Exo', sans-serif;
+}
+
 /* Navigation Bar */
 
 .navbar-brand {
@@ -25,8 +30,8 @@ h2, h3, p {
 .nav-links {
   font-size: 20px;
   font-weight: bold;
-  padding-left: 300px;
   text-align: right;
+  padding-left: 100px;
 }
 
 .nav-link {
@@ -51,45 +56,31 @@ h2, h3, p {
   margin-bottom: 0;
 }
 
-.home-section {
-  width: 100%;
-}
-
-.home-btn {
-  width: 100%;
-  position: absolute;
-  margin-top: 150px;
-  text-align: center;
-}
-
 .home-img {
   width: 100%;
 }
 
 /* Home About */
 
+.call-to-action {
+  padding-top: 1rem;
+  text-align: center;
+}
+
 .home-about-section {
   text-align: center;
   padding: 20px 0;
-}
-
-.home-about-content {
-  width: 459px;
-  height: 200px;
+  width: 30%;
   margin: auto;
 }
 
 .profile-pic {
-  width: 220px;
-  height: 200px;
-  position: relative;
-  float: left;
-  padding: 0 10px 0 0;
+  width: 50%;
+  margin: auto;
 }
 
 .home-about-text {
-  text-align: left;
-  line-height: 1.5;
+  padding-top: 20px;
 }
 
 /* Testimonials Section */
@@ -123,15 +114,12 @@ h2, h3, p {
   padding: 1rem;
 }
 
-.testimonial-label {
-  font-weight: bold;
-  text-align: center;
-  padding: 1rem 0 3rem 0;
-  line-height: 2rem;
-}
-
 .carousel.inner {
   text-align: center;
+}
+
+.testimonials-icons {
+  padding-bottom: 1rem;
 }
 
 /* Instagram Section */
@@ -199,11 +187,7 @@ h2, h3, p {
 }
 
 .page-text {
-  padding: 5rem 0;
-}
-
-.page-breaks {
-  height: 500px;
+  padding: 1rem 0;
 }
 
 /* Event Hire Page */
@@ -223,11 +207,46 @@ h2, h3, p {
   padding-bottom: 1rem;
 }
 
-/* Orders Page */
-
-.order-img {
-  height: 250px;
+.contact-footer {
+  padding-top: 0;
 }
+
+/* Menu Page */
+
+.product-buttons {
+  padding: 1rem 0;
+}
+
+.cakes {
+  padding-top: 1rem;
+}
+
+.drinks-btn {
+  width: 300px;
+  height: 300px;
+  background-image: url("../Images/Drinks.PNG");
+  background-size: 100%;
+  border: none;
+  color: black;
+}
+
+.cakes-btn {
+  width: 300px;
+  height: 300px;
+  background-image: url("../Images/Cakes.PNG");
+  background-size: 100%;
+  border: none;
+}
+
+.drinks-title {
+  font-weight: bolder;
+}
+
+.cakes-title {
+  font-weight: bolder;
+  color: #fff;
+}
+
 
 /* Blog Page */
 
@@ -235,60 +254,40 @@ h2, h3, p {
   text-align: left;
 }
 
-/* About Page */
-
-.about-break {
-  height: 1000px
-}
-
 /* Responsiveness */
 
 
-@media (max-width: 1350px) {
-  .nav-links {
-
-    padding-left: 250px;
+@media (max-width: 768px) {
+  .home-about-section {
+    width: 80%;
+    margin: auto;
   }
 }
 
-@media (max-width: 1250px) {
-  .nav-links {
-    padding-left: 200px;
+@media (max-width: 425px) {
+  .covid-banner-text {
+    font-size: 10px;
+  }
+
+  .drinks-btn {
+    width: 200px;
+    height: 200px;
+  }
+  .cakes-btn {
+    width: 200px;
+    height: 200px;
   }
 }
 
-@media (max-width: 1200px) {
-  .nav-links {
-    padding-left: 150px;
+@media (max-width: 375px) {
+  .covid-banner-responsive {
+    width: 80%;
+    margin: auto;
   }
+
+.testimonials-text {
+  width: 80%;
+  margin: auto;
 }
 
-@media (max-width: 1200px) {
-  .nav-links {
-    padding-left: 100px;
-  }
-}
-
-@media (max-width: 1150px) {
-  .nav-links {
-    padding-left: 50px;
-  }
-}
-
-@media (max-width: 1112px) {
-  .nav-links {
-    padding-left: 8px;
-  }
-}
-
-@media (max-width: 800px) {
-  .home-btn {
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 600px) {
-  .home-btn {
-    margin-top: 60px;
-  }
 }
