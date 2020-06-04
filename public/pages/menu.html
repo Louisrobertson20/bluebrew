@@ -37,22 +37,22 @@
       <div class="nav-links collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
+            <a class="nav-link" href="/about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="event.html">EVENT HIRE</a>
+            <a class="nav-link" href="/eventhire">EVENT HIRE</a>
           </li>
           <li class="nav-item active">
             <a class="home-link nav-link" href="#">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog.html">BLOG</a>
+            <a class="nav-link" href="/blog">BLOG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT US</a>
+            <a class="nav-link" href="/contact">CONTACT US</a>
           </li>
         </ul>
 
@@ -63,20 +63,20 @@
 
 <div class="page-text">
       <h2>Menu</h2>
-    <p>We have a wide range of hot drinks, cakes and snacks. <br> <br> Pre-order is available for our cakes & snacks selection. Please email us in advance and we'll reserve a cake of your choice! <br> <br> **Please check our social media pages for cut-off times**</p>
+    <p>We have a wide range of hot drinks, cakes and snacks. <br> <br> Pre-order is available for our cakes & snacks selection. Please email us in advance and we'll reserve a cake or snack of your choice! <br> <br> **Please check our social media pages for cut-off times**</p>
 
 <div class="call-to-action">
-<a href="contact.html" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Pre-Order</a>
+<a href="/contact" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Pre-Order</a>
 </div>
 
 <br>
 
 <div class="product-buttons">
   <div class="drinks">
-<button class="drinks-btn" type="button" name="button"> <h2 class="drinks-title" >Hot Drinks</h2> </button>
+<button onclick="location.href='/drinks'" class="drinks-btn" type="button" name="button" > <h2 class="drinks-title" >Hot Drinks</h2> </button>
 </div>
 <div class="cakes">
-<button class="cakes-btn" type="button" name="button"> <h2 class="cakes-title" >Cakes & Snacks</h2></button>
+<button onclick="location.href='/cakes'" class="cakes-btn" type="button" name="button" > <h2 class="cakes-title" >Cakes & Snacks</h2></button>
 </div>
 </div>
 </div>
@@ -85,7 +85,7 @@
     <div class="footer">
 
   <div class="footer-display">
-    <a href="contact.html" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Get in Touch!</a>
+    <a href="/contact" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Get in Touch!</a>
 
   <br>
 
@@ -98,9 +98,9 @@
   </span>
 
   <h3 class="newsletter-text" ><strong>JOIN OUR MAILING LIST</strong></h3>
-  <form>
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+  <form action="/menu" method="POST">
+    <div class="newsletter-form form-group">
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <button type="submit" class="newsletter-btn btn btn-primary"> <strong> SIGN UP </strong></button>

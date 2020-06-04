@@ -1,4 +1,3 @@
-
 html {
   text-align: center;
 }
@@ -69,7 +68,7 @@ h2, h3, p {
 
 .home-about-section {
   text-align: center;
-  padding: 20px 0;
+  padding-top: 20px;
   width: 30%;
   margin: auto;
 }
@@ -81,6 +80,11 @@ h2, h3, p {
 
 .home-about-text {
   padding-top: 20px;
+}
+
+.signature {
+  font-family: 'Parisienne', cursive;
+  font-size: 2rem;
 }
 
 /* Testimonials Section */
@@ -122,6 +126,16 @@ h2, h3, p {
   padding-bottom: 1rem;
 }
 
+.social-icons-reviews {
+  padding: 10px;
+  color: #E91E63;
+}
+
+.social-icons-reviews:hover {
+  padding: 10px;
+  color: blue;
+}
+
 /* Instagram Section */
 
 .insta-section {
@@ -157,7 +171,7 @@ h2, h3, p {
   padding-top: 10px;
 }
 
-.form-group {
+.newsletter-form {
   width: 260px;
   margin: auto;
 }
@@ -168,6 +182,11 @@ h2, h3, p {
 
 .social-icons {
   padding: 10px;
+  color: #6495ed;
+}
+
+.social-icons:hover {
+  color: blue;
 }
 
 .footer-text {
@@ -197,6 +216,11 @@ h2, h3, p {
   border-width: thin;
 }
 
+.event-form {
+  width: 260px;
+  margin: auto;
+}
+
 /* Contact Page */
 
 .fab-icons {
@@ -205,6 +229,11 @@ h2, h3, p {
 
 .fas {
   padding-bottom: 1rem;
+}
+
+.contact-form {
+  width: 260px;
+  margin: auto;
 }
 
 .contact-footer {
@@ -248,9 +277,33 @@ h2, h3, p {
 }
 
 
+.drinks-blackboard {
+  width: 100%;
+}
+
+.vegan-icon {
+  color: green;
+}
+
 /* Blog Page */
 
-.blog-posts {
+.blog-content {
+  padding: 116px 0 1rem 0;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.blog-title {
+  text-align: center;
+  font-family: 'Exo', sans-serif;
+}
+
+.post-title {
+  font-family: 'Exo', sans-serif;
+}
+
+.compose-form {
   text-align: left;
 }
 

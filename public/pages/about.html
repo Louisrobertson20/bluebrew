@@ -2,12 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Blue Brew</title>
 
     <link rel="stylesheet" href="../CSS/styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -38,88 +38,44 @@
       <div class="nav-links collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
+            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="home-link nav-link" href="#">EVENT HIRE</a>
+            <a class="home-link nav-link" href="#">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">MENU</a>
+            <a class="nav-link" href="/eventhire">EVENT HIRE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog.html">BLOG</a>
+            <a class="nav-link" href="/menu">MENU</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="contact.html">CONTACT US</a>
+            <a class="nav-link" href="/blog">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT US</a>
           </li>
         </ul>
 
       </div>
     </nav>
 
-<div class="page-body">
+    <div class="page-body">
 
 <div class="page-text">
-  <h2>Event Hire</h2>
-  <p>Blue Brew is available for private hire. Please fill out the form below with your details and we'll get back to you as soon as possible.</p>
-  <form>
-
-
-    <div class="row">
-    <div class="col form-group">
-      <label>Name</label>
-      <input type="text" class="form-control" placeholder="Enter name here">
-    </div>
-    <div class="col form-group">
-      <label>Business</label>
-      <input type="text" class="form-control" placeholder="Enter business name here">
-    </div>
+      <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-    <div class="row">
-    <div class="col form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address here">
     </div>
-    <div class="col form-group">
-      <label>Telephone</label>
-      <input type="tel" class="form-control" placeholder="Enter telephone number here">
+
+    <div class="about-break">
+
     </div>
-    </div>
-    <br>
-    <p> <strong> When would you like to hire us?</strong></p>
-
-    <div class="form-group">
-      <label>Date from</label>
-      <br>
-      <input type="date" class="form-dates form-control">
-    </div>
-    <div class="form-group">
-      <label>Date to</label>
-      <br>
-      <input type="date" class="form-dates form-control">
-    </div>
-    <br>
-    <br>
-    <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
-    <br>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-
-</div>
-</div>
-
-
-<div class="page-breaks">
-
-</div>
 
     <div class="footer">
 
   <div class="footer-display">
-    <a href="contact.html" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Get in Touch!</a>
+    <a href="/contact" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Get in Touch!</a>
 
   <br>
 
@@ -132,9 +88,9 @@
   </span>
 
   <h3 class="newsletter-text" ><strong>JOIN OUR MAILING LIST</strong></h3>
-  <form>
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+  <form action="/about" method="POST">
+    <div class="newsletter-form form-group">
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <button type="submit" class="newsletter-btn btn btn-primary"> <strong> SIGN UP </strong></button>

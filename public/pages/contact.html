@@ -37,19 +37,19 @@
       <div class="nav-links collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
+            <a class="nav-link" href="/about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="event.html">EVENT HIRE</a>
+            <a class="nav-link" href="/eventhire">EVENT HIRE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="menu.html">MENU</a>
+            <a class="nav-link" href="/menu">MENU</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog.html">BLOG</a>
+            <a class="nav-link" href="/blog">BLOG</a>
           </li>
           <li class="nav-item active">
             <a class="home-link nav-link" href="#">CONTACT US</a>
@@ -81,7 +81,7 @@
           <i class="fas fa-envelope fa-3x"></i>
           </span>
           <h5 class="card-title">Email</h5>
-          <p class="card-text">bluebrew2019 <br> @outlook.com</p>
+          <p class="card-text"> <a href="mailto:bluebrew2019@outlook.com"> bluebrew2019 <br> @outlook.com </a></p>
         </div>
       </div>
       <div class="card">
@@ -89,8 +89,8 @@
           <span class="fab-icons" >
             <i class="fas fa-phone fa-3x"></i>
             </span>
-          <h5 class="card-title">Telephone</h5>
-          <p class="card-text">07544 946179</p>
+          <h5 class="card-title"> Telephone</h5>
+          <p class="card-text"> <a href="tel:07544 946179"> 07544 946179</a></p>
         </div>
       </div>
       <div class="card">
@@ -109,20 +109,20 @@
 
 <strong><p>Any feedback / questions? <br> Feel free to drop us a message below.</p></strong>
 
-<form>
+<form action="/contact" method="POST" >
   <div class="row">
-  <div class="col form-group">
+  <div class="col contact-form form-group">
     <label>Name</label>
-    <input type="text" class="form-control" placeholder="Enter name here">
+    <input type="text" name="name" class="form-control" placeholder="Enter name here">
   </div>
-  <div class="col form-group">
+  <div class="col contact-form form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address here">
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address here">
   </div>
   </div>
-  <div class="form-group">
+  <div class="contact-form form-group">
     <label for="exampleFormControlTextarea1">Feedback / Enquiry</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Let us know your thoughts or ask us a question."></textarea>
+    <textarea class="form-control" name="enquiry" id="exampleFormControlTextarea1" rows="3" placeholder="Let us know your thoughts or ask us a question."></textarea>
   </div>
   <small id="emailHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
   <br>
@@ -150,9 +150,9 @@
   </span>
 
   <h3 class="newsletter-text" ><strong>JOIN OUR MAILING LIST</strong></h3>
-  <form>
-    <div class="form-group">
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+  <form action="/contact" method="POST">
+    <div class="newsletter-form form-group">
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <button type="submit" class="newsletter-btn btn btn-primary"> <strong> SIGN UP </strong></button>
