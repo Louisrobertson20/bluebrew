@@ -14,11 +14,17 @@
   "dependencies": {
     "aos": "^2.3.4",
     "body-parser": "^1.18.3",
+    "bull": "^3.14.0",
     "dotenv": "^8.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "foreman": "^3.0.1",
     "lodash": "^4.17.15",
     "mongoose": "^5.9.17",
-    "mongoose-encryption": "^2.0.2"
+    "mongoose-encryption": "^2.0.2",
+    "throng": "^4.0.0"
+  },
+  "scripts": {
+    "start": "nf start"
   }
 }
