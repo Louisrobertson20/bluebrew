@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("process.env.ATLAS", {useNewUrlParser: true});
+mongoose.connect(process.env.ATLAS, {useNewUrlParser: true});
 
 
 const userSchema = new mongoose.Schema ({
@@ -429,11 +429,11 @@ app.post("/blog", function(req, res){
 
   const jsonData = JSON.stringify(data);
 
-  const url = process."env.CUST_KEY";
+  const url = process.env.CUST_KEY;
 
   const options = {
     method: "POST",
-    auth: "process.env.API_KEY"
+    auth: process.env.API_KEY
   }
 
   const request = https.request(url, options, function(response) {
