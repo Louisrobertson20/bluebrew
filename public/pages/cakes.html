@@ -5,7 +5,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Blue Brew</title>
+    <meta name="description" content="Takeaway coffee van based in West Sussex, England. We are continuing to operate through the COVID-19 lockdown.">
+
+    <title>Blue Brew | Takeaway Coffee Van</title>
 
     <link rel="stylesheet" href="../CSS/styles.css">
 
@@ -27,38 +29,76 @@
 
   <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #72A3B3;" >
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #72A3B3;">
 
       <img class="navbar-brand" src="../Images/logo-2.png" alt="Company Logo">
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="nav-links collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
+      <div class="nav-links collapse navbar-collapse text-left" id="navbarTogglerDemo02">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item ">
             <a class="nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/eventhire">EVENT HIRE</a>
+            <a class="nav-link" href="/gallery">GALLERY</a>
           </li>
-          <li class="nav-item active">
-            <a class="home-link nav-link" href="/menu">MENU</a>
-          </li>
-          <li class="nav-item">
+          <div class="menu-align">
+
+
+
+          <li class="nav-item dropdown menu-div">
+
+          <a class="nav-link menu-nav" href="/menu" role="button">
+            MENU
+          </a>
+          <a class="nav-link dropdown-toggle dropdown-toggle-split menu-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/drinks">DRINKS</a>
+            <a class="dropdown-item" href="/cakes">CAKES</a>
+            </div>
+
+        </li>
+        </div>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/testimonials">TESTIMONIALS</a>
+          </li> -->
+          <li class="nav-item blog-nav">
             <a class="nav-link" href="/blog">BLOG</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="/contact">CONTACT US</a>
+            <a class="nav-link" href="/eventhire">EVENT HIRE</a>
           </li>
-        </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/bluebrew2019" target="_blank"><i class="social-icons-navbar fab fa-facebook-square fa-1x"></i></a>
+            <a href="https://www.instagram.com/bluebrew2019/" target="_blank"><i class="social-icons-navbar fab fa-instagram fa-1x"></i></a>
+          </li>
 
-      </div>
+
+
+        </ul>
+        </div>
+
+
     </nav>
+
+<section id="page-backgrounds" >
+
+
 
 <div class="page-body">
 
@@ -69,7 +109,7 @@
 
   <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-1">
   <div class="col mb-3">
-    <div class="card">
+    <div class="contact-cards card">
       <img src="../Images/vic-sponge.png" class="card-img-top" alt="Victoria Sponge">
       <div class="card-body">
         <h5 class="card-title">Victoria Sponge (vegan)</h5>
@@ -78,16 +118,16 @@
     </div>
   </div>
   <div class="col mb-3">
-    <div class="card">
+    <div class="contact-cards card">
       <img src="../Images/lemon-drizzle.PNG" class="card-img-top" alt="Lemon Drizzle">
       <div class="card-body">
         <h5 class="card-title">Lemon Drizzle</h5>
-        <p class="card-text">£2.60</p>
+        <p class="card-text">£2.00</p>
       </div>
     </div>
   </div>
   <div class="col mb-3">
-    <div class="card">
+    <div class="contact-cards card">
       <img src="../Images/muffin.png" class="card-img-top" alt="Muffin">
       <div class="card-body">
         <h5 class="card-title">Biscoff Muffin (vegan)</h5>
@@ -99,7 +139,7 @@
 
 <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
 <div class="col mb-4">
-  <div class="card">
+  <div class="contact-cards card">
     <img src="../Images/brownie.png" class="card-img-top" alt="Brownie">
     <div class="card-body">
       <h5 class="card-title">Brownie</h5>
@@ -108,7 +148,7 @@
   </div>
 </div>
 <div class="col mb-4">
-  <div class="card">
+  <div class="contact-cards card">
     <img src="../Images/rocky-road.png" class="card-img-top" alt="Rocky Road">
     <div class="card-body">
       <h5 class="card-title">Rocky Road</h5>
@@ -117,7 +157,7 @@
   </div>
 </div>
 <div class="col mb-4">
-  <div class="card">
+  <div class="contact-cards card">
     <img src="../Images/choc-fudge.png" class="card-img-top" alt="Chocolate Fudge">
     <div class="card-body">
       <h5 class="card-title">Chocolate Fudge</h5>
@@ -126,7 +166,7 @@
   </div>
 </div>
 <div class="col mb-4">
-  <div class="card">
+  <div class="contact-cards card">
     <img src="../Images/cookies.png" class="card-img-top" alt="Cookie">
     <div class="card-body">
       <h5 class="card-title">Cookie</h5>
@@ -138,6 +178,8 @@
 
 </div>
 </div>
+
+</section>
 
     <div class="footer">
 
@@ -163,7 +205,7 @@
     <button type="submit" class="newsletter-btn btn btn-primary"> <strong> SIGN UP </strong></button>
   </form>
 
-      <h6 class="footer-text"> © Blue Brew 2020 </h6>
+      <h6 class="footer-text"> © Blue Brew <span id="currentYear"></span> </h6>
 
   </div>
 
@@ -173,6 +215,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+    <script>
+    const year = new Date().getFullYear();
+        document.getElementById("currentYear").innerHTML = year;
+    </script>
   </body>
 </html>

@@ -20,27 +20,45 @@ h2, h3, p {
   font-family: 'Exo', sans-serif;
 }
 
+#page-backgrounds {
+  background-color: #ddf3f5;
+}
+
+#page-background-gallery {
+  background-color: #ddf3f5;
+  height: 1000px;
+}
+
 /* Navigation Bar */
 
 .navbar-brand {
   width: 120px;
 }
 
-.nav-links {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: right;
-  padding-left: 100px;
-}
-
-.nav-link {
-  margin: 0 10px;
-  font-family: 'Exo', sans-serif;
-  letter-spacing: 2px;
-}
-
 .home-link {
   text-decoration: underline;
+}
+
+.nav-item {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+  font-family: 'Exo', sans-serif;
+  letter-spacing: 3px;
+  padding: 0 5px 0 5px;
+}
+
+.social-icons-navbar {
+  padding-top: 7px;
+}
+
+.menu-div {
+  width: 100px;
+}
+
+.menu-nav {
+  float: left;
+  margin-right: 0;
 }
 
 /* Home Section */
@@ -61,16 +79,24 @@ h2, h3, p {
 
 /* Home About */
 
+#home-about {
+    background-color: #ddf3f5;
+}
+
 .call-to-action {
   padding-top: 1rem;
   text-align: center;
 }
 
+.home-about-div {
+  width: 70%;
+  margin: auto;
+}
+
 .home-about-section {
   text-align: center;
   padding-top: 20px;
-  width: 30%;
-  margin: auto;
+
 }
 
 .profile-pic {
@@ -85,6 +111,15 @@ h2, h3, p {
 .signature {
   font-family: 'Parisienne', cursive;
   font-size: 2rem;
+}
+
+.insta-icon-about {
+  color: #E91E63;
+  padding-bottom: 13px;
+}
+
+.insta-icon-about:hover {
+  color: #654062;
 }
 
 /* Testimonials Section */
@@ -139,9 +174,7 @@ h2, h3, p {
 /* Instagram Section */
 
 .insta-section {
-  background-color: #d3d3d3;
   text-align: center;
-  padding-bottom: 1rem;
 }
 
 .insta-icon {
@@ -205,8 +238,31 @@ h2, h3, p {
   margin: auto;
 }
 
+.page-body-about {
+  padding-top: 100px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
 .page-text {
   padding: 1rem 0;
+}
+
+.story-1 {
+  text-align: left;
+}
+
+.story-2 {
+  text-align: right;
+}
+
+.story-2-text {
+  margin-bottom: 0;
+}
+
+.story-img-2 {
+  padding: 2rem;
 }
 
 /* Event Hire Page */
@@ -221,6 +277,11 @@ h2, h3, p {
   margin: auto;
 }
 
+.event-input {
+  width: 50%;
+  margin: auto;
+}
+
 /* Contact Page */
 
 .fab-icons {
@@ -231,6 +292,10 @@ h2, h3, p {
   padding-bottom: 1rem;
 }
 
+.contact-title {
+  padding-bottom: 1rem;
+}
+
 .contact-form {
   width: 260px;
   margin: auto;
@@ -238,6 +303,10 @@ h2, h3, p {
 
 .contact-footer {
   padding-top: 0;
+}
+
+.contact-cards {
+  box-shadow: 10px 10px 8px #888888;
 }
 
 /* Menu Page */
@@ -295,12 +364,13 @@ h2, h3, p {
 }
 
 .blog-title {
-  text-align: center;
+  text-align: left;
   font-family: 'Exo', sans-serif;
 }
 
 .post-title {
   font-family: 'Exo', sans-serif;
+  font-weight: bold;
 }
 
 .compose-form {
@@ -317,9 +387,19 @@ h2, h3, p {
   }
 }
 
+@media (max-width: 650px) {
+  .event-input {
+    width: 80%;
+  }
+}
+
 @media (max-width: 425px) {
   .covid-banner-text {
     font-size: 10px;
+  }
+
+  .event-input {
+    width: 100%;
   }
 
   .drinks-btn {
@@ -330,6 +410,9 @@ h2, h3, p {
     width: 200px;
     height: 200px;
   }
+  .home-about-div {
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -338,9 +421,23 @@ h2, h3, p {
     margin: auto;
   }
 
+  .story-img {
+  width: 200px;
+  height: 200px;
+  }
+
+  .story-img-2 {
+  width: 300px;
+  height: 300px;
+  }
+
 .testimonials-text {
   width: 80%;
   margin: auto;
+}
+
+.page-body-about {
+  width: 100%;
 }
 
 }

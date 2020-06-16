@@ -7,8 +7,12 @@ const _ = require("lodash");
 const mongoose = require("mongoose");
 const https = require("https");
 const encrypt = require("mongoose-encryption");
+const nodemailer = require('nodemailer');
+const { log } = console;
+const mailGun = require('nodemailer-mailgun-transport');
+const path = require('path');
 
-const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
+const homeStartingContent = "Here you can keep up to date with what we have been up to and where. It is our aim to keep this page as updated as possible.";
 
 const app = express();
 
@@ -19,6 +23,44 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.ATLAS, {useNewUrlParser: true});
 
+const auth = {
+    auth: {
+        api_key: process.env.API_KEY_MAILGUN,
+        domain: process.env.DOMAIN
+    }
+};
+
+const transporter = nodemailer.createTransport(mailGun(auth));
+
+const sendMail = (subject, text, cb) => {
+    const mailOptions = {
+        from: 'bluebrew2019@outlook.com',
+        to: 'bluebrew2019@outlook.com',
+        subject,
+        text
+    };
+
+    transporter.sendMail(mailOptions, function (err, data) {
+        if (err) {
+            return cb(err, null);
+        }
+        return cb(null, data);
+    });
+}
+
+app.post('/email', (req, res) => {
+    const { subject, text } = req.body;
+    log('Data: ', req.body);
+
+    sendMail(subject, text, function(err, data) {
+        if (err) {
+            log('ERROR: ', err);
+            return res.status(500).json({ message: err.message || 'Internal Error' });
+        }
+        log('Email sent!!!');
+        return res.json({ message: 'Email sent!!!!!' });
+    });
+});
 
 const userSchema = new mongoose.Schema ({
   email: String,
@@ -60,6 +102,22 @@ app.get("/eventhire", function(req, res){
 
 app.get("/menu", function(req, res){
   res.sendFile(__dirname + "/public/pages/menu.html");
+});
+
+app.get("/form-success", function(req, res){
+  res.sendFile(__dirname + "/public/pages/success.html");
+});
+
+app.get("/form-failure", function(req, res){
+  res.sendFile(__dirname + "/public/pages/failure.html");
+});
+
+app.get("/gallery", function(req, res){
+  res.sendFile(__dirname + "/public/pages/gallery.html");
+});
+
+app.get("/testimonials", function(req, res){
+  res.sendFile(__dirname + "/public/pages/testimonials.html");
 });
 
 app.get("/blog", function (req, res){
@@ -252,6 +310,7 @@ app.post("/contact", function(req, res){
   const email = req.body.email;
   const name = req.body.name;
   const enquiry = req.body.enquiry;
+  const telephone = req.body.telephone;
 
   const data = {
     members: [
@@ -259,8 +318,11 @@ app.post("/contact", function(req, res){
         email_address: email,
         status: "subscribed",
         merge_fields: {
+          EMAIL: email,
           FNAME: name,
+          PHONE: telephone,
           ENQUIRY: enquiry
+
         }
       }
     ]
@@ -334,6 +396,7 @@ app.post("/eventhire", function(req, res){
   const business = req.body.business;
   const dateFrom = req.body.dateFrom;
   const dateTo = req.body.dateTo;
+  const message = req.body.message;
 
   const email = req.body.email;
 
@@ -347,7 +410,8 @@ app.post("/eventhire", function(req, res){
           PHONE: telephone,
           BUSINESS: business,
           DATEFROM: dateFrom,
-          DATETO: dateTo
+          DATETO: dateTo,
+          MESSAGE: message
         }
       }
     ]

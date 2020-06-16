@@ -6,7 +6,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Blue Brew</title>
+  <meta name="description" content="Takeaway coffee van based in West Sussex, England. We are continuing to operate through the COVID-19 lockdown.">
+
+  <title>Blue Brew | Takeaway Coffee Van</title>
 
   <link rel="stylesheet" href="../CSS/styles.css">
 
@@ -41,28 +43,58 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="nav-links collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="nav-links collapse navbar-collapse text-left" id="navbarTogglerDemo02">
 
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <ul class="navbar-nav ml-auto">
 
         <li class="nav-item active">
-          <a class="home-link nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          <a class="home-link nav-link" href="/">HOME <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/eventhire">EVENT HIRE</a>
+          <a class="nav-link" href="/gallery">GALLERY</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/menu">MENU</a>
-        </li>
-        <li class="nav-item">
+        <div class="menu-align">
+
+
+
+        <li class="nav-item dropdown menu-div">
+
+        <a class="nav-link menu-nav" href="/menu" role="button">
+          MENU
+        </a>
+        <a class="nav-link dropdown-toggle dropdown-toggle-split menu-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">Toggle Dropdown</span>
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/drinks">DRINKS</a>
+          <a class="dropdown-item" href="/cakes">CAKES</a>
+          </div>
+
+      </li>
+      </div>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/testimonials">TESTIMONIALS</a>
+        </li> -->
+        <li class="nav-item blog-nav">
           <a class="nav-link" href="/blog">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/eventhire">EVENT HIRE</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contact">CONTACT US</a>
         </li>
+        <li class="nav-item">
+          <a href="https://www.facebook.com/bluebrew2019" target="_blank"><i class="social-icons-navbar fab fa-facebook-square fa-1x"></i></a>
+          <a href="https://www.instagram.com/bluebrew2019/" target="_blank"><i class="social-icons-navbar fab fa-instagram fa-1x"></i></a>
+        </li>
+
+
 
       </ul>
       </div>
@@ -78,17 +110,29 @@
 </div>
   </div>
 
-    <img class="home-img" src="../Images/home-banner.png" alt="Blue Brew Coffee Van">
+    <img class="home-img" src="../Images/home-img.jpg" alt="Blue Brew Coffee Van">
 
 
   <!-- Home About Section -->
+
+  <section id="home-about" >
+
+
 
 <div class="call-to-action" data-aos="zoom-in" >
 <a href="/menu" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">MENU</a>
 </div>
 
+<div class="home-about-div">
+
+
+<div class="row row-cols-1 row-cols-lg-2 row-cols-sm-1">
+
+<div class="col mb-2">
+
   <div class="home-about-section">
-    <h2>A bit about us...</h2>
+    <br>
+    <h2> A bit about us...</h2>
 
     <div class="" data-aos="fade-up">
         <img class="profile-pic" src="../Images/jem-ben.png" alt="Jem & Ben">
@@ -105,8 +149,31 @@
       </div>
 
         </div>
+        </div>
+
+<div class="col mb-2">
+
+
+  <div class="insta-section">
+  <a href="https://www.instagram.com/bluebrew2019/" target="_blank"><i class="insta-icon-about fab fa-instagram fa-2x"></i></a>
+  <h2>Instagram</h2>
+  <br>
+  <br>
+  <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+
+</div>
+</div>
+
+        </div>
+        </div>
+
+
 
     <hr class="dashed">
+
+    <br>
+
+    </section>
 
     <!-- Testimonials Section -->
 
@@ -163,49 +230,35 @@
 
     </section>
 
-    <!-- Instagram Section -->
-
-    <div class="insta-section">
-      <i class="insta-icon fab fa-instagram fa-2x"></i>
-      <h2>Instagram</h2>
-      <img class="insta-img" src="../Images/insta-img-1.PNG" alt="Insta Img 1">
-      <img class="insta-img" src="../Images/insta-img-2.PNG" alt="Insta Img 2">
-      <img class="insta-img" src="../Images/insta-img-3.PNG" alt="Insta Img 3">
-      <img class="insta-img" src="../Images/insta-img-4.PNG" alt="Insta Img 4">
-      <img class="insta-img" src="../Images/insta-img-5.PNG" alt="Insta Img 5">
-      <img class="insta-img" src="../Images/insta-img-6.PNG" alt="Insta Img 6">
-
-    </div>
-
     <!-- Home Footer -->
 
     <div class="footer">
 
-      <div class="footer-display">
-        <a href="/contact" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Get in Touch!</a>
+  <div class="footer-display">
+    <a href="/contact" role="button" class="btn btn-lg active" aria-pressed="true" style="background-color: #E91E63; color: #fff; font-weight: bold">Get in Touch!</a>
 
-        <br>
+  <br>
 
-        <span style="color: #72A3B3;">
-          <a href="https://www.facebook.com/bluebrew2019" target="_blank"><i class="social-icons fab fa-facebook-square fa-2x"></i></a>
-        </span>
+  <span style="color: #72A3B3;">
+    <a href="https://www.facebook.com/bluebrew2019" target="_blank"><i class="social-icons fab fa-facebook-square fa-2x"></i></a>
+  </span>
 
-        <span style="color: #72A3B3;">
-          <a href="https://www.instagram.com/bluebrew2019/" target="_blank"><i class="social-icons fab fa-instagram fa-2x"></i></a>
-        </span>
+  <span style="color: #72A3B3;">
+  <a href="https://www.instagram.com/bluebrew2019/" target="_blank"><i class="social-icons fab fa-instagram fa-2x"></i></a>
+  </span>
 
-        <h3 class="newsletter-text"><strong>JOIN OUR MAILING LIST</strong></h3>
-        <form action="/" method="POST">
-          <div class="newsletter-form form-group">
-            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <button type="submit" class="newsletter-btn btn btn-primary"> <strong> SIGN UP </strong></button>
-        </form>
+  <h3 class="newsletter-text" ><strong>JOIN OUR MAILING LIST</strong></h3>
+  <form action="/contact" method="POST">
+    <div class="newsletter-form form-group">
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <button type="submit" class="newsletter-btn btn btn-primary"> <strong> SIGN UP </strong></button>
+  </form>
 
-        <h6 class="footer-text"> © Blue Brew 2020 </h6>
+      <h6 class="footer-text"> © Blue Brew <span id="currentYear"></span> </h6>
 
-      </div>
+  </div>
 
     </div>
 
@@ -218,7 +271,18 @@
 <script>
   AOS.init();
 </script>
-
+<script>
+const year = new Date().getFullYear();
+    document.getElementById("currentYear").innerHTML = year;
+</script>
+<script type="text/javascript">
+/* curator-feed-default-feed-layout */
+(function(){
+var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+i.src = "https://cdn.curator.io/published/0e6dac18-fd3e-45d1-ab0e-135f3489b83a.js";
+e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+})();
+</script>
 </body>
 
 </html>
