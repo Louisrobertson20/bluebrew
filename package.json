@@ -23,7 +23,7 @@
     "mailgun-js": "^0.22.0",
     "mongoose": "^5.9.17",
     "mongoose-encryption": "^2.0.2",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-mailgun-transport": "^2.0.0",
     "throng": "^4.0.0"
   }
